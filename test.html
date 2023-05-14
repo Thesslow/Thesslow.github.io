@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/img/slider/cinema1.jpg" />
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/img/slider/cinema2.jpg" />
+          <div class="caption left-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/img/slider/cinema3.jpg" />
+          <div class="caption right-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/img/slider/cinema1.jpg" />
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- akhir slider -->
+    <!-- script -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 600,
+        interval: 3000,
+      });
+    </script>
+  </body>
+</html>
